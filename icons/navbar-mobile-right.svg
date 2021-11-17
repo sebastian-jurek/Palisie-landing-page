@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="360" height="54" viewBox="0 0 360 54" xml:space="preserve">
+<desc>Created with Fabric.js 4.2.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(1 0 0 1 180 27)" id="f3b32a3a-930b-436b-b262-d039d2a6fceb"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-180" y="-27" rx="0" ry="0" width="360" height="54" />
+</g>
+<g transform="matrix(Infinity NaN NaN Infinity 0 0)" id="52505bcf-91db-40bb-bf95-4f03deafd744"  >
+</g>
+<g transform="matrix(0.98 0 0 0.98 335.29 27)" id="7dbf7d9d-7013-4d26-bcf7-f887913a8bf5"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA3CAYAAACsLgJ7AAAAAXNSR0IArs4c6QAAAeFJREFUaEPtmrFOwzAQhu9c0XfhAdrO8B68BxMDT8PEGyCx1s4ASwWiUxdUqZUYWFqh/MhpHNy0kRwxXF3dYNXx3fny35dYanQ8Go3mzMxEFAb5OYB6uVn3dvLr3r4LObQFw39tdZ6QqEoW9oxt1lpT25ofHo/HaC/mdG2tDYJV1EmDU1InjSe6OSWlpAQroI+fYPF7pVZSvcol6KykBIvfK7WS6lUuQedzJPVjrb3I/U/iiog+iGgNwM+Xzrnb3ETNiegNwMILMcYsAfjPD6vNZrPebrer2Wz2nY0oAM/MPAfwTkQLL6Qsy3IwGAwBNKMoioesRB07f5h5SETV8OKcc5fZiEo9UM/x9CMVlYpf2k9JSRNIza+kUisl7aekpAmk5ldSqZWS9lNS0gRS8yup1EpJ+ykpaQKp+ZVUaqWk/ZSUNIHU/EoqtVLSfkpKmkBq/qxJAfgiope2WOfcVbafnWNRzPxJRK8ACufcU7ai4hsH4EV5al7U3VmIikVk/U51HRxdoh6jgLgfNW4EDi67buC/puC99friaFwdU4UfyxeafWN71GTcGWetvT54/CaTyU28YZgbY6qu5i5b6Hr2G4a5MVXjcYjZ647ustV5mj2CKL9n2xbfS7BNp9P7tqhf8XF3R94j9ZAAAAAASUVORK5CYII=" x="-26.5" y="-27.5" width="53" height="55"></image>
+</g>
+</svg>

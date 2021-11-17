@@ -5,26 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palisie</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>"
     />
   </head>
   <body>
     <div class="container-bg">
       <div class="container-items">
+        <header class="main-head">
+          <nav class="nav-bar">
+            <div class="nav-bar-desktop">
+              <ul class="nav-links">
+                <li><a class="active" href="./">o nas</a></li>
+                <li><a href="products/">świece</a></li>
+                <li><a href="order/">zamów</a></li>
+                <li><a href="contact/">kontakt</a></li>
+              </ul>
+            </div>
+            <div class="nav-bar-mobile">
+              <div class="nav-bar-toggle">
+              <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+              </div>
+              <ul class="nav-links-mobile">
+                <li><a class="active" href="./">o nas</a></li>
+                <li><a href="products/">świece</a></li>
+                <li><a href="order/">zamów</a></li>
+                <li><a href="contact/">kontakt</a></li>
+            </div>
+          </div>
+            
+          </nav>
+        </header>
+
         <section class="hero">
           <img
-            class="hero-logo"
-            src="icons/Palisie-logo-large.svg"
+            class="logo-large"
+            src="/icons/Palisie-logo-large.svg"
             alt="Palisie"
           />
           <div class="text-area">
@@ -50,8 +72,26 @@
               PA, LISIE!
             </p>
           </div>
+          <button class="btn-style btn-see-products">Zobacz świece</button>
         </section>
+        <!-- <section class="page-closer">
+          <div class="click-here-arrow"></div>
+          <div class="click-here-text"></div>
+        </section> -->
       </div>
     </div>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#">Regulamin</a></li>
+        <li><a href="#">Polityka Prywatności</a></li>
+      </ul>
+      <ul class="footer-ig">
+        <li>
+          <img src="icons/Instagram footer.svg" alt="instagram-social" />
+        </li>
+        <li><a href="#">Instagram @palisie_naturalnie</a></li>
+      </ul>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
