@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   outline: solid black;
+  overflow: hidden;
 }
 
 a {
@@ -74,28 +75,25 @@ a:active {
   background-image: url("./icons/nav-svg-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   margin-top: 10px;
-  /* background-image: url("./icons/navbar-mobile-left.svg"),
-    url("./icons/navbar-mobile-right.svg");
-  background-color: black;
-  background-position: left, right;
-   */
   top: 42px;
-  width: 360px; /* 90vh ????? */
+  width: 95vw;
   height: 54.44px;
-  
 }
 
 .nav-bar-toggle {
   display: flex;
+  position: relative;
   justify-content: flex-end;
   align-content: flex-end;
-  
 }
 
 /* ------------BURGIR------------------ */
 .menu-btn {
-  position: relative;
+  position: absolute;
+  top: 15px;
+  right: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,10 +152,13 @@ a:active {
   list-style: none;
   display: none;
   background-color: #363636;
+  text-align: center;
 }
 
 .nav-links-mobile.open {
   display: block;
+  height: 97vh;
+  width: 95vw;
 }
 
 /* Pattern top right*/
