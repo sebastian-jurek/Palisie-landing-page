@@ -20,7 +20,6 @@ body {
   flex-direction: column;
   min-height: 100%;
   outline: solid black;
-  overflow: hidden;
 }
 
 a {
@@ -283,10 +282,13 @@ footer {
 }
 
 .footer-ig li {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   display: flex;
   align-items: center;
+}
+
+.footer-ig li img {
+  margin-right: 8px;
+  margin-bottom: 2px;
 }
 
 footer li {
@@ -328,11 +330,25 @@ footer li {
   }
 
   footer {
+    display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+  footer li {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 44px;
+    text-align: left;
+  }
+
+  .footer-ig li {
+    flex-wrap: nowrap;
   }
 }
-
 @media screen and (max-width: 470px) {
   .container-bg {
     background-position: top -80% right -25%, bottom -90% left -30%,
