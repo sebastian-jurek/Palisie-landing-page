@@ -58,8 +58,6 @@ a:active {
   padding-right: 1.375rem;
 }
 
-/* Vector 240 */
-
 .nav-bar-desktop {
   background-image: url("./icons/Nav-svg.svg");
   /* background-position: top; */
@@ -100,12 +98,11 @@ a:active {
   height: 20px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  background-color: purple;
 }
 .menu-btn__burger {
   width: 19.5px;
   height: 0.9px;
-  background: rgb(255, 0, 0);
+  background: #ffffff;
   box-shadow: 0 2px 5px rgba(27, 27, 26, 0.2);
   transition: all 0.5s ease-in-out;
 }
@@ -115,7 +112,7 @@ a:active {
   position: absolute;
   width: 19.5px;
   height: 0.9px;
-  background: rgb(255, 0, 0);
+  background: #ffffff;
   box-shadow: 0 2px 5px rgba(27, 27, 26, 0.2);
   transition: all 0.5s ease-in-out;
 }
@@ -155,9 +152,15 @@ a:active {
 }
 
 .nav-links-mobile.open {
-  display: block;
+  display: flex;
   height: 97vh;
   width: 95vw;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-links-mobile.open li {
+  margin-bottom: 56px;
 }
 
 /* Pattern top right*/
@@ -170,38 +173,13 @@ a:active {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-content: stretch; */
   align-items: center;
-  /* justify-content: center; */
-  /*TO BE CHECKED */
 }
 
 .container-items {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* Logo duże */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo-large {
-  margin-top: 50px; /*margin TBC */
-}
-
-.text-area {
-  margin-top: 50px; /*margin TBC */
-  text-align: center;
-  max-width: 730px;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.02em;
-  color: #363636;
-  font-weight: 300;
 }
 
 p {
@@ -226,28 +204,6 @@ p {
 
   color: #ffffff;
 }
-
-.btn-see-products {
-  margin-top: 48px; /*margin TBC */
-  margin-bottom: 100px; /*margin TBC */
-}
-
-/*Kliknij tutaj! */
-
-/* .click-here-arrow {
-  background-image: url("./icons/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-
-.click-here-text {
-
-  background-image: url("./icons/closer-text.svg");
-  background-repeat: no-repeat;
-  height: 3.125rem;
-  width: 12.5rem;
-  background-position: 20rem;
-} */
 
 /* Stopka */
 
@@ -374,14 +330,55 @@ footer li {
   }
 }
 
+/* ----------LANDING PAGE CSS  -------------------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-large {
+  margin-top: 50px; /*margin TBC */
+}
+
+.text-area {
+  margin-top: 50px; /*margin TBC */
+  text-align: center;
+  max-width: 730px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+  color: #363636;
+  font-weight: 300;
+}
+
+.btn-see-products {
+  margin-top: 48px; /*margin TBC */
+  margin-bottom: 100px; /*margin TBC */
+}
+
+/*Kliknij tutaj! */
+
+/* .click-here-arrow {
+  background-image: url("./icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.click-here-text {
+
+  background-image: url("./icons/closer-text.svg");
+  background-repeat: no-repeat;
+  height: 3.125rem;
+  width: 12.5rem;
+  background-position: 20rem;
+} */
+
 /*---------------------logo small----------------------------------------------------*/
 /* logo small */
 
 .logo-small {
-  margin-top: 7.375rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 27.54px;
 }
 
 /*---------------------świece----------------------------------------------------*/
