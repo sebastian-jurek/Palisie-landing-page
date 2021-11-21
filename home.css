@@ -1,16 +1,22 @@
-/* ----------LANDING PAGE CSS  -------------------- */
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .logo-large {
-  margin-top: 50px; /*margin TBC */
+  margin-top: 50px;
 }
 
 .text-area {
-  margin-top: 50px; /*margin TBC */
+  margin-top: 50px;
   text-align: center;
   max-width: 730px;
   font-size: 1.125rem;
