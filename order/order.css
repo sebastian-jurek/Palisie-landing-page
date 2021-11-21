@@ -1,0 +1,9 @@
+.logo-small {
+  margin-top: 27.54px;
+}
+@media screen and (max-width: 768px) {
+    .logo-small {
+      display: none;
+    }
+  }
+  

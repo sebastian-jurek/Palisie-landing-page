@@ -1,0 +1,41 @@
+.logo-small {
+  margin-top: 27.54px;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  margin-top: 11rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #363636;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.contact-details {
+  margin-top: 5.688rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #363636;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 2.75rem;
+
+  margin-bottom: 10.125rem;
+}
+
+.btn-mail-us {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-small {
+    display: none;
+  }
+}

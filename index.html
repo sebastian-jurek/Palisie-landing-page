@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palisie</title>
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../home.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,19 +22,20 @@
           <nav class="nav-bar">
             <div class="nav-bar-desktop">
               <ul class="nav-links">
-                <li><a class="active" href="./">o nas</a></li>
+                <li><a class="nav-active" href="./">o nas</a></li>
                 <li><a href="products/">świece</a></li>
                 <li><a href="order/">zamów</a></li>
                 <li><a href="contact/">kontakt</a></li>
               </ul>
             </div>
             <div class="nav-bar-mobile">
-              <div class="nav-bar-toggle">
+              <div class="nav-bar-container">
+                <div id="nav-logo-small-landing-page"class="nav-logo-small"></div>
               <div class="menu-btn">
                 <div class="menu-btn__burger"></div>
               </div>
               <ul class="nav-links-mobile">
-                <li><a class="active" href="./">o nas</a></li>
+                <li><a class="nav-active" href="./">o nas</a></li>
                 <li><a href="products/">świece</a></li>
                 <li><a href="order/">zamów</a></li>
                 <li><a href="contact/">kontakt</a></li>
@@ -72,7 +74,7 @@
               PA, LISIE!
             </p>
           </div>
-          <button class="btn-style btn-see-products">Zobacz świece</button>
+          <a href="./products/"><button class="btn-style btn-see-products">Zobacz świece</button></a>
         </section>
       </div>
     </div>
