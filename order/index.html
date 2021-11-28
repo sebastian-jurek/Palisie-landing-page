@@ -1,56 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palisie</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../order/order.css" />
+    <link rel="stylesheet" href="../order/form.css" />
+    <link rel="stylesheet" href="validation.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="jQuery.js"></script>
+    <script src="parsley.min.js"></script>
+    <script src="pl.js"></script>
+    <script src="shipping.js"></script>
+    <script src="shipping.js"></script>
+</head>
+<body>
     <div class="container-bg">
-      <div class="container-items">
-        <header class="main-head">
-          <nav class="nav-bar">
-            <div class="nav-bar-desktop">
-              <ul class="nav-links">
-                <li><a href="../">o nas</a></li>
-                <li><a href="../products/">świece</a></li>
-                <li><a class="nav-active" href="../order/">zamów</a></li>
-                <li><a href="../contact/">kontakt</a></li>
-              </ul>
+        <div class="container-items">
+            <header class="main-head">
+                <nav class="nav-bar">
+                    <div class="nav-bar-desktop">
+                        <ul class="nav-links">
+                            <li><a href="../">o nas</a></li>
+                            <li><a href="../products/">świece</a></li>
+                            <li><a class="nav-active" href="../order/">zamów</a></li>
+                            <li><a href="../contact/">kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar-mobile">
+                        <div class="nav-bar-container">
+                        <div class="nav-logo-small"></div>
+                        <div class="menu-btn">
+                            <div class="menu-btn__burger"></div>
+                        </div>
+                        <ul class="nav-links-mobile">
+                            <li><a href="../">o nas</a></li>
+                            <li><a href="../products/">świece</a></li>
+                            <li><a class="nav-active" href="../order/">zamów</a></li>
+                            <li><a href="../contact/">kontakt</a></li>
+                        </div>
+                    </div> 
+                </nav>
+            </header>
+            <section class="form">
+            <h1>Złóż zamówienie</h1>
+            <form
+                class="order-form"
+                data-parsley-validate
+            >
+                <div class="column">
+                    <div class="col products">
+                            <div class="product">
+                                <div class="product-name">
+                                    <p>Lisi Zakątek</p>
+                                    <span>🌲 leśny i rześki | 39 zł</span>
+                                </div>
+                                <input
+                                    data-parsley-type="digits"
+                                    type="number"
+                                    name="Lisi Zakątek"
+                                    class="form-control product-input"
+                                    placeholder="ilość"
+                                    id="candle1"
+                                    min="0"
+                                /> 
+                            </div>
+                            <div class="product">
+                                <div class="product-name">
+                                    <p>Przysmak Lisa</p>
+                                    <span>🍪 ciasteczkowy i słodki | 39 zł</span>
+                                </div>
+                                <input
+                                    type="number"
+                                    name="Przysmak Lisa"
+                                    class="form-control product-input"
+                                    placeholder="ilość"
+                                    id="candle2"
+                                    min="0"
+                                />
+                            </div>
+                            <div class="product">
+                                <div class="product-name">
+                                    <p>Romantyczny Lis</p>
+                                    <span>🌷 różany i porywający | 39 zł</span>
+                                </div>
+                                <input
+                                    type="number"
+                                    name="Romantyczny Lis"
+                                    class="form-control product-input"
+                                    placeholder="ilość"
+                                    id="candle3"
+                                    min="0"
+                                />
+                            </div>
+                    </div>
+                    <!-- Dane do wysyłki -->
+                    <div class="col">
+                        <br />
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            class="form-control"
+                            placeholder="Imię i nazwisko"
+                            required
+                        />
+                    </div>
+                    <div class="col">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="form-control"
+                            placeholder="e-mail"
+                            required
+                            data-parsley-type="email"
+                        />
+                    </div>
+                    <div class="col">
+                        <input
+                            type="number"
+                            name="telefon"
+                            id="phone"
+                            class="form-control"
+                            placeholder="nr. telefon"
+                            required
+                        />
+                    </div>
+                    <br>
+                    <div class="col">
+                        <input
+                            type="text"
+                            name="adres"
+                            id="adress"
+                            class="form-control"
+                            placeholder="ulica i nr. budynku/mieszkania"
+                            required
+                        />
+                    </div>
+                    <div class="city-zip">
+                        <div class="col">
+                            <input
+                                type="text"
+                                name="kod pocztowy"
+                                id="zip-code"
+                                class="form-control zip-code"
+                                placeholder="kod pocztowy"
+                                maxlength="6"
+                                required
+                            />
+                        </div>
+                        <div class="col">
+                            <input
+                                type="text"
+                                id="city"
+                                name="miasto"
+                                class="form-control city"
+                                placeholder="miasto"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <textarea id="info" name="dodatkowe informacje">Dodatkowe informacje</textarea>
+                </div>
+                <div class="column column-two">
+                    <br>
+                    <div class="col">
+                        <select id="shipping" class="shipping" name="wysyłka" style="color: #777" required="">
+                            <option value="0" disabled selected>dostawa</option>
+                            <option value="8.99">Paczkomat - 8,99 zł</option>
+                            <option value="14.99">Kurier InPost - 14,99 zł</option>
+                            <option value="0">Odbiór Osobisty (Praga-Północ Warszawa)</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input
+                            type="text"
+                            id="paczkomat"
+                            name="paczkomat"
+                            class="form-control paczkomat"
+                            placeholder="Numer paczkomatu lub adres"
+                        />
+                    </div>
+                    <br>
+                    <button class="btn-style btn btn-lg btn-dark btn-block">
+                        Wyślij formularz
+                    </button>
+                </div>
+                <!-- SETTINGS | NIE ZMIENIAC  -->
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            <div class="order-info">
+                <div class="sum">
+                    <p>Kwota do zapłaty: </p><span id="order-sum" class="order-sum"></span>
+                </div>
+                <div class="payment">
+                    <p class="strong">Na podany adres email wyślemy potwierdzenie* i link do płatności. </p>
+                    <br>
+                    <p>*Nadawcą wiadomości będzie:</p> 
+                    <p class="strong"> Mateusz Karski przez inFakt</p>
+                    <br>
+                    <p>Po zaksięgowaniu wyślemy do Ciebie zamówienie w przeciągu tygodnia.</p>
+                    <br>
+                    <p>Dziękujemy!</p>
+                </div>
             </div>
-            <div class="nav-bar-mobile">
-              <div class="nav-bar-container">
-                <div class="nav-logo-small"></div>
-              <div class="menu-btn">
-                <div class="menu-btn__burger"></div>
-              </div>
-              <ul class="nav-links-mobile">
-                <li><a href="../">o nas</a></li>
-                <li><a href="../products/">świece</a></li>
-                <li><a class="nav-active" href="../order/">zamów</a></li>
-                <li><a href="../contact/">kontakt</a></li>
-            </div>
-          </div> 
-          </nav>
-        </header>
-    <div class="logo-small">
-      <img
-        class="logo-small"
-        src="../icons/Palisie-logo-small.svg"
-        alt="logo-small"
-      />
+        </section>
     </div>
-  </div>
-</div>
 </div>
 <footer>
 <ul class="footer-links">
@@ -61,8 +226,9 @@
   <li><img src="../icons/Instagram footer.svg" alt="instagram-social" /><a href="https://www.instagram.com/palisie_naturalnie/">Instagram @palisie_naturalnie</a></li>
 </ul>
 </footer>
-<script src="../main.js"></script>
 </body>
+<script src="../main.js"></script>
+<script src="form.js"></script>
 </html>
 
 

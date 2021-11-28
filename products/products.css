@@ -1,37 +1,19 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 .logo-small {
   margin-top: 27.54px;
 }
 
 .our-products {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 80px;
   margin-bottom: 10.063rem;
   max-width: 1040px;
   width: 1040px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .product-tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 10px;
   height: 36.375rem;
@@ -49,11 +31,7 @@
 }
 
 .product-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 1rem;
   font-size: 1rem;
@@ -95,9 +73,6 @@ p {
 }
 @media screen and (max-width: 768px) {
   .our-products {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
 
