@@ -1,227 +1,229 @@
 form {
-    max-width: 770px;
-    width: 770px;
-    padding-top: 35px;
-    /* position: relative; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  max-width: 770px;
+  width: 770px;
+  padding-top: 35px;
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 ::placeholder {
-    color: 777;
+  color: 777;
 }
 
 input,
 select,
 textarea {
-    color: black;
-    width: 327px;
-    height: 48px;
-    border: 1px solid #e2e2e2;
-    border-radius: 3px;
-    padding: 0 12px;
-    margin: 4px;
+  color: black;
+  width: 327px;
+  height: 48px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  padding: 0 12px;
+  margin: 4px;
 }
 
 .container-bg {
-    background-image: url("../icons/Pattern.svg"), url("../icons/Pattern2.svg");
-    background-position: top right, bottom -40px left;
-    background-repeat: no-repeat, no-repeat;
+  background-image: url("../icons/Pattern.svg"), url("../icons/Pattern2.svg");
+  background-position: top right, bottom -40px left;
+  background-repeat: no-repeat, no-repeat;
 }
 
 h1 {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 p {
-    margin: 2px 0;
+  margin: 2px 0;
 }
 
 .strong {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .form {
-    margin: 45px 0;
-    position: relative;
-    text-align: center;
-    max-width: 720px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 45px 0;
+  position: relative;
+  text-align: center;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .order-form {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: center;
 }
 .column-two {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .products {
-    display: flex;
-    flex-direction: column;
-    /* max-width: 441px; */
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 441px; */
+  align-items: center;
 }
 
 .product {
-    width: 331px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px dashed #E2E2E2;
-    padding: 10px 0;
+  width: 331px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #e2e2e2;
+  padding: 10px 0;
 }
 
 .product-input {
-    width: 89px;
+  width: 89px;
 }
 
 .product-name {
-    text-align: left;
+  text-align: left;
+}
+
+.product-name p {
+  text-transform: uppercase;
 }
 
 .product-name span {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .city-zip {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .zip-code {
-    width: 106px;
-    justify-content: center;
+  width: 106px;
+  justify-content: center;
 }
 
 .city {
-    width: 213px;
+  width: 213px;
 }
 
-.shipping, .paczkomat {
-    width: 327px;
-    margin: 4px 0;
+.shipping,
+.paczkomat {
+  width: 327px;
+  margin: 4px 0;
 }
 
 .paczkomat {
-    /* display: none; */
+  /* display: none; */
 }
 
 option {
-    color: black;
+  color: black;
 }
 
 textarea {
-    color: #777;
-    padding: 14px;
-    height: 48px;
-    padding-top: 17px;
+  color: #777;
+  padding: 14px;
+  height: 48px;
+  padding-top: 17px;
 }
 
 .order-info {
-    display: none;
-    line-height: 22px;
-    padding: 24px;
-    text-align: left;
-    position: absolute;
-    bottom: -14px;
-    right: -49px;
-    text-align: left;
-    font-weight: 300;
+  display: none;
+  line-height: 22px;
+  padding: 24px;
+  text-align: left;
+  position: absolute;
+  bottom: -14px;
+  right: -49px;
+  text-align: left;
+  font-weight: 300;
 }
 
 .order-info-show {
-    display: block;
+  display: block;
 }
 .sum,
 .payment {
-    padding: 26px;
-    width: 334px;
-    background-color: #F5F5F5;
+  padding: 26px;
+  width: 334px;
+  background-color: #f5f5f5;
 }
 
-
-
 .payment {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .order-sum {
-    font-size: 24px;
-    color: #e76f18;
-    display: inline;
-    font-weight: 400;
+  font-size: 24px;
+  color: #e76f18;
+  display: inline;
+  font-weight: 400;
 }
 
 .payment-sub-title {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .sum p {
-    display: inline;
+  display: inline;
 }
 
 .btn-style {
-    padding-top: 14px;
+  padding-top: 14px;
 }
 
 @media screen and (max-width: 838px) {
-    form {
-        max-width: auto;
-        width: auto;
-    }
+  form {
+    max-width: auto;
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    form {
-        max-width: 730px;
-        width: auto;
-    }
-    .form {
-        width: auto;
-    }
-    .order-form {
-        flex-direction: column;
-    }
-    .column-two {
-        align-items: center;
-    } 
-    .shipping, .paczkomat{
-        margin: 4px;
-    }
-    .order-info{
-        position: static;
-    }
+  form {
+    max-width: 730px;
+    width: auto;
+  }
+  .form {
+    width: auto;
+  }
+  .order-form {
+    flex-direction: column;
+  }
+  .column-two {
+    align-items: center;
+  }
+  .shipping,
+  .paczkomat {
+    margin: 4px;
+  }
+  .order-info {
+    position: static;
+  }
 }
 
-
 @media screen and (max-width: 470px) {
-    .container-bg {
-      background-position: top -80% right -25%, bottom -90% left -30%;
-    }
+  .container-bg {
+    background-position: top -80% right -25%, bottom -90% left -30%;
   }
-  
-  @media screen and (max-width: 414px) {
-    .container-bg {
-      background-position: top -80% right -25%, bottom -90% left -30%;
-    }
+}
+
+@media screen and (max-width: 414px) {
+  .container-bg {
+    background-position: top -80% right -25%, bottom -90% left -30%;
   }
-  
-  @media screen and (max-width: 320px) {
-    .container-bg {
-      background-position: top -73% right -95%, bottom -73% left -5%;
-    }
+}
+
+@media screen and (max-width: 320px) {
+  .container-bg {
+    background-position: top -73% right -95%, bottom -73% left -5%;
   }
-  
-  
+}
