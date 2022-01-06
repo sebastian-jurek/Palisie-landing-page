@@ -136,13 +136,9 @@ textarea {
 .order-info {
   display: none;
   line-height: 22px;
-  padding: 24px;
-  text-align: left;
-  position: absolute;
-  bottom: -14px;
-  right: -49px;
   text-align: left;
   font-weight: 300;
+  padding: 2rem 0.3rem;
 }
 
 .order-info-show {
