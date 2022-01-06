@@ -180,6 +180,28 @@ textarea {
   padding-top: 14px;
 }
 
+.paczkomat-info {
+  display: none;
+  background-image: url("../icons/inpost-logo.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  margin-top: 15px;
+  font-weight: 400;
+  padding: 1rem 0.3rem;
+}
+
+.paczkomat-info a {
+  display: flex;
+  justify-content: flex-start;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 838px) {
   form {
     max-width: auto;
