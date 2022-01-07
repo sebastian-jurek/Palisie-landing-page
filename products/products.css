@@ -1,5 +1,9 @@
 .logo-small {
-  margin-top: 27.54px;
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  left: 50px;
+  top: 43.73px;
 }
 
 .our-products-row1 {
