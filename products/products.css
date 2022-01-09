@@ -33,14 +33,24 @@
   max-height: 582px;
 }
 
+.product-tab-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  height: 667px;
+  max-width: 222px;
+  max-height: 667px;
+}
+
 .product-tab-limited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
-  height: 45.625rem;
+  height: 734px;
   max-width: 222px;
-  max-height: 650px;
+  max-height: 734px;
 }
 
 .product-name {
