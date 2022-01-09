@@ -106,10 +106,51 @@ p {
   color: #e76f18;
 }
 
+.container-bg {
+  background-image: url("../icons/Pattern.svg"),
+    url("../icons/Pattern-large.svg"), url("../icons/transparent.png");
+  background-position: top right, top 65% left, bottom 41.5px right 148px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1537px) {
+  .container-bg {
+    background-position: top right, top 52% left -10%, bottom 41.5px right 148px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .container-bg {
+    background-position: top right, top 52% left -20%, bottom 41.5px right 148px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .our-products-row1,
   .our-products-row2 {
     width: auto;
+  }
+  .container-bg {
+    background-position: top -20% right -20%, top 45% left -25%,
+      bottom 31.5px right 108px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .container-bg {
+    background-position: top -20% right -20%, top 45% left -55%,
+      bottom 31.5px right 108px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .container-bg {
+    background-position: top -20% right -20%, top 45% left -85%,
+      bottom 31.5px right 108px;
   }
 }
 
@@ -125,5 +166,9 @@ p {
   }
   .logo-small {
     display: none;
+  }
+  .container-bg {
+    background-position: top -40% right -25%, bottom -75% left -35%,
+      bottom -25% left -20%;
   }
 }
