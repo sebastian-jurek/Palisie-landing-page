@@ -198,6 +198,14 @@ textarea {
   text-decoration: underline;
 }
 
+.logo-small {
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  left: 50px;
+  top: 43.73px;
+}
+
 @media screen and (max-width: 838px) {
   form {
     max-width: auto;
@@ -225,6 +233,9 @@ textarea {
   }
   .order-info {
     position: static;
+  }
+  .logo-small {
+    display: none;
   }
 }
 
