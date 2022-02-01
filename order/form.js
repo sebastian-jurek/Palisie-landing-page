@@ -15,6 +15,7 @@ $(function () {
           "Romantyczny Lis": document.querySelector("#candle3").value,
           "Lisie Sandały": document.querySelector("#candle4").value,
           Kominek: document.querySelector("#candle5").value,
+          Paczulis: document.querySelector("#candle6").value,
           wysylka: document.querySelector("#shipping").value,
           "numer paczkomatu": document.querySelector("#paczkomat").value,
           miasto: document.querySelector("#city").value,
@@ -33,7 +34,7 @@ $(function () {
 
       const candle = [];
 
-      for (n = 1; n < 6; n++) {
+      for (n = 1; n < 7; n++) {
         const numberOfCandle = "#candle" + n;
         if (document.querySelector(numberOfCandle).value == "") {
           document.querySelector(numberOfCandle).value = 0;
@@ -50,6 +51,7 @@ $(function () {
         candle[3] * candlePrice +
         candle[4] * candlePrice +
         candle[5] * candlePrice +
+        candle[6] * candlePrice +
         shipping;
       console.log("Sumowa zamówienia to: " + orderSum);
 
