@@ -4,7 +4,7 @@ $(function () {
     .on("form:success", function (formInstance) {
       axios.defaults.headers.post["Content-Type"] = "application/json";
       axios
-        .post("https://formsubmit.co/ajax/sebastian.jurek44@gmail.com", {
+        .post("https://formsubmit.co/ajax/7b4583a16ee708120af40456400cc007", {
           name: "PotwierdzenieZamowienia",
           message: "Zamówienie",
           email: document.querySelector("#email").value,

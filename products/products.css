@@ -20,7 +20,7 @@
   margin-bottom: 10.063rem;
   max-width: 1040px;
   width: 1040px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .product-tab {
@@ -109,7 +109,7 @@ p {
 .container-bg {
   background-image: url("../icons/Pattern.svg"),
     url("../icons/Pattern-large.svg"), url("../icons/transparent.png");
-  background-position: top right, top 65% left, bottom 41.5px right 148px;
+  background-position: top right, top 65% left -5%, bottom 41.5px right 148px;
   background-repeat: no-repeat, no-repeat, no-repeat;
   min-height: 100vh;
   display: flex;
@@ -117,15 +117,27 @@ p {
   align-items: center;
 }
 
-@media screen and (max-width: 1537px) {
+@media screen and (max-width: 1729px) {
   .container-bg {
-    background-position: top right, top 52% left -10%, bottom 41.5px right 148px;
+    background-position: top right, top 60% left -15%, bottom 41.5px right 148px;
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1520px) {
   .container-bg {
-    background-position: top right, top 52% left -20%, bottom 41.5px right 148px;
+    background-position: top right, top 52% left -24%, bottom 41.5px right 148px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .container-bg {
+    background-position: top right, top 52% left -40%, bottom 41.5px right 148px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .container-bg {
+    background-position: top right, top 52% left -60%, bottom 41.5px right 148px;
   }
 }
 
