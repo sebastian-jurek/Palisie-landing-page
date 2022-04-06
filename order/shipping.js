@@ -7,7 +7,7 @@ const paczkomatMap = document.querySelector("#paczkomatMap");
 
 shippingOptions.addEventListener("change", (event) => {
   const selectedPaczkomat = document.querySelector("#paczkomat");
-  if (event.target.value == 8.99) {
+  if (event.target.value == 9.9) {
     selectedPaczkomat.style = "display: block";
     paczkomatMap.style = "display:block";
     selectedPaczkomat.required = true;
